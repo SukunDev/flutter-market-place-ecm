@@ -24,20 +24,11 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -51,22 +42,47 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBTdIVz7Gfn5t76qRep1hpgoyh0pl1L46U',
-    appId: '1:209667583537:web:6b0d8c5eaa7e7d9e7fef10',
-    messagingSenderId: '209667583537',
-    projectId: 'wais-e4d81',
-    authDomain: 'wais-e4d81.firebaseapp.com',
-    databaseURL: 'https://wais-e4d81-default-rtdb.firebaseio.com',
-    storageBucket: 'wais-e4d81.appspot.com',
-    measurementId: 'G-V5556SGCJS',
+    apiKey: 'AIzaSyDTcVtuAyuVf47RaRQULvB5l35loYIz8LQ',
+    appId: '1:296326367524:web:93b542ee11ff18dd974bb1',
+    messagingSenderId: '296326367524',
+    projectId: 'ecm-project-9a545',
+    authDomain: 'ecm-project-9a545.firebaseapp.com',
+    storageBucket: 'ecm-project-9a545.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC_CQ-pc4yOqEtnboWrUxQQUwgkJW0HdtM',
-    appId: '1:209667583537:android:d8ac599c65aea4c27fef10',
-    messagingSenderId: '209667583537',
-    projectId: 'wais-e4d81',
-    databaseURL: 'https://wais-e4d81-default-rtdb.firebaseio.com',
-    storageBucket: 'wais-e4d81.appspot.com',
+    apiKey: 'AIzaSyCCIS3J9WzIZ4EOQnlioIc_uoZa8PGMp8k',
+    appId: '1:296326367524:android:3128aa7663e69c5f974bb1',
+    messagingSenderId: '296326367524',
+    projectId: 'ecm-project-9a545',
+    storageBucket: 'ecm-project-9a545.appspot.com',
   );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyCYFjtlkF9otqk-gqnWTzIzWfLFKKwpjFY',
+    appId: '1:296326367524:ios:4fca46d4e812eb89974bb1',
+    messagingSenderId: '296326367524',
+    projectId: 'ecm-project-9a545',
+    storageBucket: 'ecm-project-9a545.appspot.com',
+    iosBundleId: 'com.example.ecm',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyCYFjtlkF9otqk-gqnWTzIzWfLFKKwpjFY',
+    appId: '1:296326367524:ios:4fca46d4e812eb89974bb1',
+    messagingSenderId: '296326367524',
+    projectId: 'ecm-project-9a545',
+    storageBucket: 'ecm-project-9a545.appspot.com',
+    iosBundleId: 'com.example.ecm',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyDTcVtuAyuVf47RaRQULvB5l35loYIz8LQ',
+    appId: '1:296326367524:web:aea9272ef6e1f435974bb1',
+    messagingSenderId: '296326367524',
+    projectId: 'ecm-project-9a545',
+    authDomain: 'ecm-project-9a545.firebaseapp.com',
+    storageBucket: 'ecm-project-9a545.appspot.com',
+  );
+
 }
